@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'chillax';
+    src: url('../fonts/Chillax.ttf');
+}
+
+* {
+    font-family: 'chillax', sans-serif;
+}
+
+.container {
+    max-width: 75% !important;
+}
+
+.container-profile {
+    border-radius: 2px;
+    margin-top: 35vh;
+    background-color: #1a1a1a;
+    height: 50vh;
+    text-align: center;
+}
+
+.profile-photo {
+    margin-top: -12vh;
+    width: 200px;
+    height: 200px;
+}
+
+.info-profile {
+    padding-top: 20px;
+}
+
+#profile-name {
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 28px;
+    line-height: 29px;
+    font-style: normal;
+}
+
+#profile-name img {
+    width: 15px;
+}
+
+#profile-location {
+    color: rgb(146, 146, 146);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 5px;
+}
+
+#profile-location img {
+    width: 20px;
+}
+
+#profile-email {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.container-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+}
+
+.container-links img {
+    width: 40px;
+    filter: invert();
+    border: 1px solid #919191;
+}
+
+.container-links img:hover {
+    border: 1px solid #000000;
+}
