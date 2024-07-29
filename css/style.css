@@ -7,6 +7,36 @@
     font-family: 'chillax', sans-serif;
 }
 
+body {
+    background-color: #0e0e0e !important;
+}
+
+.wallpaper {
+    z-index: -1;
+    top: 0;
+    background: url('../img/wallpaper.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 70%;
+    background-position: center bottom;
+    text-align: center;
+    overflow: hidden;
+    position: absolute;
+}
+
+.cut {
+    z-index: -1;
+    background: #0e0e0e;
+    position:absolute;
+    top: 300px;
+    left: -50px;
+    width: 150%;
+    height: 300px;
+    transform-origin: center top;
+    transform: rotate(-6deg);
+}
+
 .container {
     max-width: 75% !important;
 }
@@ -30,7 +60,7 @@
 }
 
 #profile-name {
-    font-weight: 500;
+    font-weight: 600;
     color: #ffffff;
     font-size: 28px;
     line-height: 29px;
@@ -75,4 +105,102 @@
 
 .container-links img:hover {
     border: 1px solid #000000;
+}
+
+.row {
+    column-gap: 5vh;
+}
+
+.container-grid-options {
+    margin-top: 12vh;
+    margin-bottom: 15vh;
+}
+
+.option {
+    height: 80px;
+    background-color: #1a1a1a;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 3vh;
+    gap: 16px;
+    cursor: pointer;
+}
+
+.container-img-logo img {
+    width: 50px;
+    border-radius: 2px;
+    margin-left: -3vh;
+    filter: drop-shadow(0px 10px 15px #44dd5e);
+}
+
+.container-option-info {
+    margin-top: 2vh;
+}
+
+.container-option-info h4 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #ffffff;
+    margin: 0;
+}
+
+.container-option-info p {
+    font-size: 14px;
+    color: rgb(146, 146, 146);
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.arrow {
+    width: 12px;
+    margin-left: 28vh;
+}
+
+.option:hover .container-img-logo img {
+    transition: all 300ms;
+    margin-top: -1vh;
+    filter: drop-shadow(0px 5px 15px #44dd72);
+}
+
+.option:hover .arrow {
+    transition: all 300ms;
+    margin-left: 29vh;
+}
+
+.container-video {
+    text-align: center;
+}
+
+iframe {
+    width: 800px;
+    height: 400px;
+    margin-top: -15vh;
+    margin-bottom: 14vh;
+}
+
+@media screen and (max-width: 990px) {
+    .container-profile {
+        background-color: unset;
+    }
+
+    .profile-photo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .wallpaper {
+        background-position: center;
+        height: 35%;
+    }
+
+    .cut {
+        display: none;
+    }
+
+    .container-grid-options {
+        margin-top: -5vh;
+    }
+    
 }
